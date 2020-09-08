@@ -1,5 +1,7 @@
 ### Hey there,I am Shivani kulkarni 👋
 
+***work from home*** :house:
+
 
  **I am a computer engineer recently pursuing BE from "VESIT" Mumbai.
  Looking forward to work in a challenging and dynamic
