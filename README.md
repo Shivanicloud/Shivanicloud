@@ -17,7 +17,7 @@
 - 👯 I’m looking to collaborate on python project 
 - 🤔 I’m looking for help with machine learning developer 
 - 💬 Ask me about any markup languages.
-- 📫 How to reach me:[LinkedIn]( https://www.linkedin.com/in/shivani-kulkarni-b6a0241b6 ) , [email](Shivanikulkarni509@gmail.com)
+- 📫 How to reach me:[LinkedIn]( https://www.linkedin.com/in/shivani-kulkarni-b6a0241b6 ) , (Shivanikulkarni509@gmail.com)
 - 😄 Pronouns:she/her
 - ⚡ Fun fact: I can leave without mob for maximum 10 hrs.
 --> 
