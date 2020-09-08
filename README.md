@@ -3,11 +3,11 @@
 ***work from home*** :house:
 
 
- **I am a computer engineer recently pursuing BE from "VESIT" Mumbai.
+" **I am a computer engineer recently pursuing BE from "VESIT" Mumbai.
  Looking forward to work in a challenging and dynamic
  Environment and love to keep adding value to the
  Organization that I represent and serve, while
- Continuously updating my skills and knowledge.**
+ Continuously updating my skills and knowledge.** "
 
 
 
@@ -36,7 +36,7 @@
 </a>
 <br/>
 
-**languages**
+**languages** :-
 
  <code><img height="25" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
 <code><img height="25" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/android/android.png"></code>
