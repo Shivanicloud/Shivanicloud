@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create account</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+*{
+	box-sizing:border-box;
+}
+body{
+	background-color:#9b59b6;
+	font-family:'open sans',sans-serif;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	min-height:100vh;
+	margin:0;
+}
+.container{
+	background-color:#fff;
+	border-radius:5px;
+	box-shadow:0 2px 5px rgba(0,0,0,0.3);
+	width:400px;
+	max-width:100vh;
+}
+h2{
+	background-color:#f7f7f7;
+	border-bottom:1px solid #f0f0f0;
+	padding:20px 40px;
+}
+ h2{
+	margin:0;
+}
+form{
+	padding:3px 4px 5px 2px;
+	width:100%;
+}
+.form-group{
+	margin-bottom:10px;
+	padding-bottom:20px;
+	position:relative;
+}
+.form-group label{
+	display:inline-block;
+     margin-bottom:5px;
+}
+.form-group input{
+	border:2px solid #f0f0f0;
+	border-radius:4px;
+	display:block;
+	font-family:inherit;
+	font-size:14px;
+	padding:10px;
+	width:100%;
+}
+.form-group i {
+	position:absolute;
+	top:40px;
+	right:10px;
+	visibility:hidden;
+}
+ .form-group span {
+	position:relative;
+	bottom:0px;
+	left:0;
+	margin-top:10px;
+}
+ .btn{
+	background-color:#8e44ad;
+	border:2px solid #8e44ad;
+	color:#fff;
+	display:block;
+	font-family:inherit;
+	border-radius:4px;
+	font-size:16px;
+	padding:10px 0 10px;
+	width:100%;
+}
+	
+	
+	
+</style>
+</head>
+<body>
+<div class="container">
+<h2 class="text-center">create account</h2>
+<div class="col-lg-8 m-auto d-block">
+<form class="bg-light" action="#" onsubmit = "validation()">
+<div class="form-group">
+	        <label><i class="fa fa-user"></i>firstname</label>
+	         <input type="text" name="user" id="firstname" placeholder="enter firstname" class="form-control" autocomplete="off">
+			 <i class="fa fa-check-circle"></i>
+             <i class="fa fa-exclamation-circle"></i>
+			 <span id="fn" class="text-danger font-weight-bold"></span>
+			 </div>
+	 <div class="form-group">
+	       <label><i class="fa fa-user"></i>lastname</label>
+	         <input type="text" name="user" id="lastname" placeholder="enter lastname" class="form-control" autocomplete="off">
+			 <i class="fa fa-check-circle"></i>
+             <i class="fa fa-exclamation-circle"></i>
+			 <span id="ln" class="text-danger font-weight-bold"></span>
+			 </div>
+	<div class="form-group">
+	      <label><i class="fa fa-envelope"></i>E-mail</label>
+	         <input type="email" name="user" id="email" placeholder="enter email" class="form-control" autocomplete="off">
+			 <i class="fa fa-check-circle"></i>
+             <i class="fa fa-exclamation-circle"></i>
+			 <span id="emailid" class="text-danger font-weight-bold"></span>
+			 </div>
+	<div class="form-group">
+			 <label><i class="fa fa-birthday-cake"></i>Date of birth</label>
+	         <input type="date" id="date" placeholder="dd/mm/yy" class="form-control" autocomplete="off">
+			 </div>
+    <div class="form-group">
+	       <label><i class="fa fa-phone-square"></i>phone number</label>
+	         <input type="text" name="user" id="phone" placeholder="enter phone number" class="form-control" autocomplete="off">
+			 <i class="fa fa-check-circle"></i>
+             <i class="fa fa-exclamation-circle"></i>
+			 <span id="phonenumber" class="text-danger font-weight-bold"></span>
+			 </div>
+			 <button type="submit" id="submit" class="btn">Register</button>
+		 </form>
+</div>
+<script>
+     function validation(){
+	  var firstname = document.getElementById('firstname').value
+	  var lastname = document.getElementById('lastname').value
+	  var email = document.getElementById('email').value
+	  var phonenumber = document.getElementById('phone').value
+	  if(firstname == ""){
+	    document.getElementById('fn').innerHTML = " **enter firstname";
+		return false;
+		}
+		if(( firstname.length<3)||(firstname.length>15)){
+		 document.getElementById('fn').innerHTML = " **enter firstname in betwwen 3 and 15";
+		return false;
+		}
+		if(!isNaN(firstname)){
+		document.getElementById('fn').innerHTML = " **enter character";
+		return false;
+		}
+		if(lastname == ""){
+	    document.getElementById('ln').innerHTML = " **enter lastname";
+		return false;
+		}
+		if(( lastname.length<3)||(lastname.length>15)){
+		 document.getElementById('ln').innerHTML = " **enter lastname in betwwen 3 and 15";
+		return false;
+		}
+		if(!isNaN(lastname)){
+		document.getElementById('ln').innerHTML = " **enter character";
+		return false;
+		}
+		if(email == ""){
+	    document.getElementById('emailid').innerHTML = " **enter email";
+		return false;
+		}
+		if(email.indexOf('@') <= 0){
+	    document.getElementById('emailid').innerHTML = " **enter email in proper format @ ";
+		return false;
+		}
+		if((email.charAt(email.length-4)!='.')&&(email.charAt(email.length-4)!='.')){
+	    document.getElementById('emailid').innerHTML = " **enter email in proper format";
+		return false;
+		}
+		if(phonenumber == ""){
+	    document.getElementById('phonenumber').innerHTML = " **enter number";
+		return false;
+		}
+		if(phonenumber.length!=10){
+	    document.getElementById('phonenumber').innerHTML = " ** number should contain 10 digits";
+		return false;
+		}
+		if(isNaN(phonenumber)){
+	    document.getElementById('phonenumber').innerHTML = " ** number should contain atleast 10 digits ";
+		return false;
+		}
+		}
+	 </script>
+  
+  </body>
+</html>
